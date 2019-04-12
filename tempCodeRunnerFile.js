@@ -1,7 +1,24 @@
-let a = [1,2,3],
-    b = [1,2,3];
- if (a === b) {
-     console.log('True');
- } else {
-    console.log('False');
- }
+let appData = {
+    budget: money,
+    expenses: {}, 
+    optionalExpenses: {}, 
+    income: [],
+    savings: true
+};
+
+function chooseOptExpenses() {
+
+    for(i = 0; i < 3; i++) {
+        let opt = prompt("Статья необязательных расходов?");
+    
+        if((typeof(opt)) === 'string' && (typeof(opt)) != null && opt != '') {
+            appData.optionalExpenses = opt;
+        } else {
+            i--;
+        }
+        i++;
+    }
+}
+
+chooseOptExpenses();
+console.log(appData);
