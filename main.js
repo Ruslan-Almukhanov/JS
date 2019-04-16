@@ -93,7 +93,7 @@ let appData = {
 let data = [];
 let i;
 for( let all in appData) {
-    console.log("Наша программа включает в себя данные:" + all);
+    console.log("Наша программа включает в себя данные:" + all + " - " + appData[all]);
 }
 
 appData.moneyPerDay = +((appData.budget / 30).toFixed());
